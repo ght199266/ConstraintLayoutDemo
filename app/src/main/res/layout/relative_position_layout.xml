@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bias(0.6)"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_position"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:text="位置"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="居上左对齐"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_position"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_position" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="靠右剧中"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn_position"
+        app:layout_constraintStart_toEndOf="@+id/btn_position"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="居下右对齐"
+        app:layout_constraintRight_toRightOf="@+id/btn_position"
+        app:layout_constraintTop_toBottomOf="@+id/btn_position" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="居左底部对齐"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_position"
+        app:layout_constraintRight_toLeftOf="@+id/btn_position" />
+
+
+</android.support.constraint.ConstraintLayout>
